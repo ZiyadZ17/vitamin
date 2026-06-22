@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="main-img/favicon.ico">
+    <title>Vitamin</title>
+</head>
+<body>
+    <a href="https://wa.me/995557651166" class="whatsapp"><img src="main-img/WhatsApp.webp" alt="WhatsApp"></a>
+    <a href="viber://chat?number=%2B995557651166" class="viber"><img src="main-img/viber.png" alt="Viber"></a>
+    <a href="tel:+995557651166" class="phone"><img src="main-img/phone.svg" alt="Phone"></a>
+    
+    <div class="top-section">
+        <p class="top-number">557651166</p>
+
+        <div class="top-language">
+            <button class="georgian" onclick="setGeo()"><img class="geo-img" src="main-img/lang-geo.png" alt="Georgian language"></button>
+            <button class="english" onclick="setEng()"><img class="eng-img" src="main-img/lang-eng.png" alt="English language"></button>
+            <button class="russian" onclick="setRus()"><img class="rus-img" src="main-img/lang-rus.png" alt="Russian language"></button>
+        </div>
+    </div>
+
+    <header>
+        <div class="burger-menu">
+                <img class="burger-img" src="main-img/burger-menu.png" alt="Open menu">
+                <span class="geo">მენიუ</span>
+                <span class="eng">Menu</span>
+                <span class="rus">Меню</span>
+        </div>
+
+            <a href="main.html"><img class="vitamin-logo" src="main-img/vitamin-logo.png" alt="Vitamin logo"></a>
+
+        <a class="cart-icon" href="#">
+            <img src="main-img/bag.svg" alt="Cart">
+            <div class="cart-count">0</div>
+        </a>
+    </header>
+    <main class="container">
+        <div class="main-slider">
+            <div class="slide active">
+                <div class="slide-text">
+                    <h2>
+                    <span class="geo">100 % ბიო-ორგანული დანამატები</span>
+                    <span class="eng">100% Bio-Organic Supplements</span>
+                    <span class="rus">100% Био-органические добавки</span>
+                    </h2>
+                    <p>
+                    <span class="geo">"ვიტამინი" გთავაზობთ 100% ორგანული და ეკოლოგიურად სუფთა საკვები პროდუქტების ყველაზე ფართო ასორტიმენტს!</span>
+                    <span class="eng">"Vitamin" offers you the widest range of 100% organic and environmentally friendly food products!</span>
+                    <span class="rus">«Витамин» предлагает вам самый широкий ассортимент 100% органических и экологически чистых пищевых продуктов!</span>
+                    </p>
+                    <a href="https://vitamini.ge/ge/product-category/15-%E1%83%9B%E1%83%AA%E1%83%94%E1%83%9C%E1%83%90%E1%83%A0%E1%83%94%E1%83%A3%E1%83%9A%E1%83%98%20%E1%83%94%E1%83%A5%E1%83%A1%E1%83%A2%E1%83%A0%E1%83%90%E1%83%A5%E1%83%A2%E1%83%98" class="slide-show">
+                    <span class="geo">ნახვა</span>
+                    <span class="eng">View</span>
+                    <span class="rus">Посмотреть</span>
+                    </a>
+                </div>
+
+                <img class="slide-img" src="main-img/slide-img-2.jpg" alt="Vitamin">
+            </div>
+
+            <div class="slide">
+                <div class="slide-text">
+                    <h2>
+                    <span class="geo">მცენარეული ექსტრაქტები</span>
+                    <span class="eng">Herbal Extracts</span>
+                    <span class="rus">Растительные экстракты</span>
+                    </h2>
+                    <p>
+                    <span class="geo">100% ბუნებრივი წყაროდან მოპოვებული მცენარეული ექსტრაქტები</span>
+                    <span class="eng">Herbal extracts obtained from 100% natural sources</span>
+                    <span class="rus">Растительные экстракты, полученные из 100% натуральных источников</span>
+                    </p>
+                    <a href="https://vitamini.ge/ge/product-category/139-%D0%91%D0%B8%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B" class="slide-show">
+                    <span class="geo">ნახვა</span>
+                    <span class="eng">View</span>
+                    <span class="rus">Посмотреть</span>
+                    </a>
+                </div>
+
+                <img class="slide-img" src="main-img/slide-img-1.jpg" alt="Vitamin">
+            </div>
+            <button class="prev-slide" onclick="prevSlide()"><</button>
+            <button class="next-slide" onclick="nextSlide()">></button>
+        </div>
+    
+        <div class="categories">
+            <h2>
+            <span class="geo">პოპულარული კატეგორიები</span>
+            <span class="eng">POPULAR CATEGORIES</span>
+            <span class="rus">ПОПУЛЯРНЫЕ КАТЕГОРИИ</span>
+            </h2>
+
+            <div class="category-wrap">
+                <a href="https://vitamini.ge/ge/product-category/16-%E1%83%A1%E1%83%90%E1%83%AE%E1%83%A1%E1%83%A0%E1%83%94%E1%83%91%E1%83%98%E1%83%A1%20%E1%83%AF%E1%83%90%E1%83%9C%E1%83%9B%E1%83%A0%E1%83%97%E1%83%94%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90" class="category">
+                    <img class="category-img" src="main-img/item-1.jpg" alt="Category image">
+                    <h4><span class="geo">სახსრების ჯანმრთელობა</span></h4>
+                    <h6><span class="geo">81 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Joint Health</span></h4>
+                    <h6><span class="eng">81 products</span></h6>
+
+                    <h4><span class="rus">Здоровье суставов</span></h4>
+                    <h6><span class="rus">81 продукт</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/18-%E1%83%AF%E1%83%90%E1%83%9C%E1%83%A1%E1%83%90%E1%83%A6%E1%83%98%20%E1%83%A1%E1%83%90%E1%83%99%E1%83%95%E1%83%94%E1%83%91%E1%83%98" class="category">
+                    <img class="category-img" src="main-img/item-2.jpg" alt="Category image">
+                    <h4><span class="geo">ჯანსაღი საკვები</span></h4>
+                    <h6><span class="geo">159 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Healthy Food</span></h4>
+                    <h6><span class="eng">159 products</span></h6>
+
+                    <h4><span class="rus">Здоровое питание</span></h4>
+                    <h6><span class="rus">159 продуктов</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/59-%E1%83%95%E1%83%94%E1%83%92%E1%83%90%E1%83%9C%E1%83%A3%E1%83%A0%E1%83%98" class="category">
+                    <img class="category-img" src="main-img/item-3.jpg" alt="Category image">
+                    <h4><span class="geo">ვეგანური</span></h4>
+                    <h6><span class="geo">96 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Vegan</span></h4>
+                    <h6><span class="eng">96 products</span>
+
+                    <h4><span class="rus">Веганский</span></h4>
+                    <h6><span class="rus">96 продуктов</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/104-%E1%83%92%E1%83%A3%E1%83%9A%E1%83%98%E1%83%A1%20%E1%83%AF%E1%83%90%E1%83%9C%E1%83%9B%E1%83%A0%E1%83%97%E1%83%94%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90" class="category">
+                    <img class="category-img" src="main-img/item-4.jpg" alt="Category image">
+                    <h4><span class="geo">გულის ჯანმრთელობა</span></h4>
+                    <h6><span class="geo">175 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Heart Health</span></h4>
+                    <h6><span class="eng">175 products</span></h6>
+
+                    <h4><span class="rus">Здоровье сердца</span></h4>
+                    <h6><span class="rus">175 продуктов</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/105-%E1%83%A4%E1%83%90%E1%83%9B%E1%83%A4%E1%83%98" class="category">
+                    <img class="category-img" src="main-img/item-5.jpg" alt="Category image">
+                    <h4><span class="geo">ფამფი</span></h4>
+                    <h6><span class="geo">69 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Pumping</span></h4>
+                    <h6><span class="eng">69 products</span></h6>
+
+                    <h4><span class="rus">Пампинг</span></h4>
+                    <h6><span class="rus">69 продуктов</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/106-%E1%83%A1%E1%83%94%E1%83%A5%E1%83%A1%E1%83%A3%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%AF%E1%83%90%E1%83%9C%E1%83%9B%E1%83%A0%E1%83%97%E1%83%94%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90" class="category">
+                    <img class="category-img" src="main-img/item-6.jpg" alt="Category image">
+                    <h4><span class="geo">სექსუალური ჯანმრთელობა</span></h4>
+                    <h6><span class="geo">121 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Sexual Health</span></h4>
+                    <h6><span class="eng">121 products</span></h6>
+
+                    <h4><span class="rus">Сексуальное здоровье</span></h4>
+                    <h6><span class="rus">121 продукт</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/109-%E1%83%92%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%A0%E1%83%98%E1%83%95%E1%83%98%20%E1%83%A8%E1%83%94%E1%83%A1%E1%83%90%E1%83%AB%E1%83%9A%E1%83%94%E1%83%91%E1%83%9A%E1%83%9D%E1%83%91%E1%83%94%E1%83%91%E1%83%98%E1%83%A1%20%E1%83%92%E1%83%90%E1%83%A3%E1%83%9B%E1%83%AF%E1%83%9D%E1%83%91%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%90" class="category">
+                    <img class="category-img" src="main-img/item-7.jpg" alt="Category image">
+                    <h4><span class="geo">გონებრივი შესაძლებლობების გაუმჯობესება</span></h4>
+                    <h6><span class="geo">173 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Improving Mental Capabilities</span></h4>
+                    <h6><span class="eng">173 products</span></h6>
+
+                    <h4><span class="rus">Улучшение умственных способностей</span></h4>
+                    <h6><span class="rus">173 продукта</span></h6>
+                </a>
+
+                <a href="https://vitamini.ge/ge/product-category/110-%E1%83%99%E1%83%90%E1%83%9C%E1%83%98,%20%E1%83%97%E1%83%9B%E1%83%90%20%E1%83%93%E1%83%90%20%E1%83%A4%E1%83%A0%E1%83%A9%E1%83%AE%E1%83%98%E1%83%9A%E1%83%94%E1%83%91%E1%83%98" class="category">
+                    <img class="category-img" src="main-img/item-8.jpg" alt="Category image">
+                    <h4><span class="geo">კანი, თმა და ფრჩხილები</span></h4>
+                    <h6><span class="geo">157 პროდუქტი</span></h6>
+
+                    <h4><span class="eng">Skin, Hair and Nails</span></h4>
+                    <h6><span class="eng">157 products</span></h6>
+
+                    <h4><span class="rus">Кожа, волосы и ногти</span></h4>
+                    <h6><span class="rus">157 продуктов</span></h6>
+                </a>
+            </div>
+        </div>
+    
+        <div class="popular-products">
+            <h2>
+            <span class="geo">პოპულარული პროდუქცია</span>
+            <span class="eng">POPULAR PRODACTS</span>
+            <span class="rus">ПОПУЛЯРНЫЕ ПРОДУКТЫ</span>
+            </h2>
+
+            <div class="popular-tabs">
+                    <button class="discount" onclick="setDiscountTab()">
+                        <span class="geo">ფასდაკლებები</span>
+                        <span class="eng">Discounts</span>
+                        <span class="rus">Скидки</span>
+                    </button>
+                    <button class="new-products" onclick="setNewProductsTab()">
+                        <span class="geo">ახალი პროდუქცია</span>
+                        <span class="eng">New products</span>
+                        <span class="rus">Новые продукты</span>
+                    </button>
+                </div>
+
+            <div class="popular-wrap tab-1">
+
+                <a href="https://vitamini.ge/product/vitamin-power-vegan-mass-gainer" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-1.jpeg" alt="Popular product">
+
+                    <p>
+                        Vitamin Power - Vegan Mass Gainer
+                    </p>
+
+                    <p>
+                        <span class="old-price">44.00₾</span>
+                        <span class="new-price">33.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/vitamin-power-vegan-pea-protein" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-2.png" alt="Popular product">
+
+                    <p>
+                        Vitamin Power - Vegan Pea Protein
+                    </p>
+
+                    <p>
+                        <span class="old-price">76.00₾</span>
+                        <span class="new-price">48.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/vitamin-power-vegan-protein" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-3.jpg" alt="Popular product">
+
+                    <p>
+                        Vitamin Power - Vegan Protein Complex
+                    </p>
+
+                    <p>
+                        <span class="old-price">76.00₾</span>
+                        <span class="new-price">49.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/vitamin-power-isolate-protein-juice" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-4.jpeg" alt="Popular product">
+
+                    <p>
+                        Vitamin power - Isolate Protein Juice
+                    </p>
+
+                    <p>
+                        <span class="old-price">122.00₾</span>
+                        <span class="new-price">88.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/vitamin-power-creatine-monohydrate" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-5.png" alt="Popular product">
+
+                    <p>
+                        Vitamin Power - Ceatine Monohydrate Unflavored
+                    </p>
+
+                    <p>
+                        <span class="old-price">64.00₾</span>
+                        <span class="new-price">39.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/vitamin-power-beta-alanine-powder" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-6.png" alt="Popular product">
+
+                    <p>
+                        Vitamin Power - BCAA 2:1:1
+                    </p>
+
+                    <p>
+                        <span class="old-price">66.00₾</span>
+                        <span class="new-price">33.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+            </div>
+
+            <div class="popular-wrap tab-2">
+
+                <a href="https://vitamini.ge/product/rainbow-light-vitamin-d3-k2" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-7.png" alt="Popular product">
+
+                    <p>
+                        Rainbow Light - Vitamin D3 + K2
+                    </p>
+
+                    <p>
+                        <span class="new-price">92.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/rainbow-light-women-s-one1" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-8.png" alt="Popular product">
+
+                    <p>
+                        Rainbow Light - Women's One
+
+                    </p>
+
+                    <p>
+                        <span class="new-price">74.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/rainbow-light-all-zyme" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-9.png" alt="Popular product">
+
+                    <p>
+                        Rainbow Light - All-Zyme
+                    </p>
+
+                    <p>
+                        <span class="new-price">119.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/rainbow-light-men-s-one" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-10.png" alt="Popular product">
+
+                    <p>
+                        Rainbow Light - Men's One
+                    </p>
+
+                    <p>
+                        <span class="new-price">89.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/natural-vitality-calm-sleep-ashwag-ksm-66-600-mg-melatonin-5mg" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-12.png" alt="Popular product">
+
+                    <p>
+                        Natural Vitality - Calm Sleep Ashwag KSM- 66 600 mg
+                    </p>
+
+                    <p>
+                        <span class="new-price">84.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+                <a href="https://vitamini.ge/product/natural-vitality-calm-sleep" class="popular-product">
+                    <img class="popular-img" src="main-img/popular-13.png" alt="Popular product">
+
+                    <p>
+                        Natural Vitality - Calm Sleep
+                    </p>
+
+                    <p>
+                        <span class="new-price">79.00₾</span>
+                    </p>
+
+                    <button class="popular-buy-btn">
+                        <div class="btn-content">
+                            <div class="btn-text-wrapper">
+                                <span class="geo">კალათაში დამატება</span>
+                                <span class="eng">Add to cart</span>
+                                <span class="rus">В корзину</span>
+                            </div>
+                            <span class="btn-icon">
+                                <img class="popular-cart" src="main-img/cart-shopping.svg" alt="Cart">
+                            </span>
+                        </div>
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="inviting">
+            <p>
+                <span class="geo">ეწვიეთ ჩვენს ფილიალებს ან შეუკვეთეთ სასურველი პროდუქცია საიტზე ადგილზე უფასო მიტანის სერვისით</span>
+                <span class="eng">Visit our branches or order the desired products on the website with free home delivery service</span>
+                <span class="rus">Посетите наши филиалы или закажите желаемую продукцию на сайте с бесплатной доставкой на дом</span>
+            </p>
+            
+
+            <a href="https://vitamini.ge/mitanis-servisi" class="service-btn">
+                <span class="geo">სერვისი</span>
+                <span class="eng">Service</span>
+                <span class="rus">Сервис</span>
+            </a>
+            <a href="https://vitamini.ge/kontaqti" class="contact-btn">
+                <span class="geo">კონტაქტი</span>
+                <span class="eng">Contact</span>
+                <span class="rus">Контакты</span>
+            </a>
+        </div>
+
+
+        <div class="article container">
+            <h2>
+                <span class="geo">სტატიები</span>
+                <span class="eng">Articles</span>
+                <span class="rus">Статьи</span>
+            </h2>
+
+            <p>
+                <span class="geo">ბოლო სიახლეები სპორტული სამყაროდან</span>
+                <span class="eng">Latest news from the world of sports</span>
+                <span class="rus">Последние новости из мира спорта</span>
+            </p>
+
+
+            <div class="article-wrap">
+
+                <a href="https://vitamini.ge/a-vitaminis-sargebeli/" class="article-item">
+                    <div class="article-img-wrapper">
+                        <img class="article-img" src="main-img/article-1.jpg" alt="Article">
+                        
+                        <div class="article-dots">
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                        </div>
+
+                    </div>
+
+                    <p class="article-p">
+                        <span class="geo">A ვიტამინის სარგებელი</span>
+                        <span class="eng">Benefits of Vitamin A</span>
+                        <span class="rus">Польза витамина А</span>
+                    </p>
+
+                    <div class="article-icons">
+                        <img src="main-img/attach.svg" alt="Attach">
+                        <img src="main-img/share.svg" alt="Share">
+                    </div>
+                </a>
+
+                <a href="https://vitamini.ge/ra-ganskhvavebaa-tutis-formebs-shoris/" class="article-item">
+
+                    <div class="article-img-wrapper">
+                        <img class="article-img" src="main-img/article-2.png" alt="Article">
+                        
+                        <div class="article-dots">
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                        </div>
+
+                    </div>
+
+                    <p class="article-p">
+                        <span class="geo">რა განსხვავებაა თუთიის ფორმებს შორის?</span>
+                        <span class="eng">What is the difference between forms of zinc?</span>
+                        <span class="rus">В чем разница между формами цинка?</span>
+                    </p>
+
+                    <div class="article-icons">
+                        <img src="main-img/attach.svg" alt="Attach">
+                        <img src="main-img/share.svg" alt="Share">
+                    </div>
+
+                </a>
+
+                <a href="https://vitamini.ge/vitaminebis-da-mineralebis-mighebis-optimaluri-droebi/" class="article-item">
+
+                    <div class="article-img-wrapper">
+                        <img class="article-img" src="main-img/article-3.png" alt="Article">
+                        
+                        <div class="article-dots">
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                            <span class="article-dot"></span>
+                        </div>
+
+                    </div>
+
+                    <p class="article-p">
+                        <span class="geo">ვიტამინების და მინერალების მიღების ოპტიმალური დროები</span>
+                        <span class="eng">Optimal times for taking vitamins and minerals</span>
+                        <span class="rus">Оптимальное время для приема витаминов и минералов</span>
+                    </p>
+
+                    <div class="article-icons">
+                        <img src="main-img/attach.svg" alt="Attach">
+                        <img src="main-img/share.svg" alt="Share">
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="selfslide container">
+
+            <div class="selfslide-1">
+                <img src="main-img/selfslide-1.svg">
+                <img src="main-img/selfslide-2.png">
+                <img src="main-img/selfslide-3.jpg">
+                <img src="main-img/selfslide-4.gif">
+                <img src="main-img/selfslide-5.jpeg">
+                <img src="main-img/selfslide-6.jpg">
+            </div>
+
+            <div class="selfslide-2">
+                <img src="main-img/selfslide-7.png">
+                <img src="main-img/selfslide-8.gif">
+                <img src="main-img/selfslide-9.jfif">
+                <img src="main-img/selfslide-10.webp">
+                <img src="main-img/selfslide-11.png">
+                <img src="main-img/selfslide-12.png">
+            </div>
+
+            <div class="selfslide-3">
+                <img src="main-img/selfslide-13.png">
+                <img src="main-img/selfslide-14.gif">
+                <img src="main-img/selfslide-15.gif">
+                <img src="main-img/selfslide-16.webp">
+                <img src="main-img/selfslide-17.png">
+                <img src="main-img/selfslide-18.jfif">
+            </div>
+
+        </div>
+
+        <div class="ending container">
+            <div>
+                <img class="ending-logo" src="main-img/vitamin-logo.png" alt="Vitamin">
+            </div>
+
+            <div class="schadule">
+                <span class="geo">
+                    სამუშაო საათები:<br>
+                    <span class="grey-font">
+                        ყოველდღე: 10:00-20:00<br>
+                        ტელეფონი: 557651166
+                    </span>
+                </span>
+                <span class="eng">
+                    Working hours:<br>
+                    <span class="grey-font">
+                        Every day: 10:00-20:00<br>
+                        Phone: 557651166
+                    </span>
+                </span>
+                <span class="rus">
+                    Рабочие часы:<br>
+                    <span class="grey-font">
+                        Каждый день: 10:00-20:00<br>
+                        Телефон: 557651166
+                    </span>
+                </span>
+            </div>
+
+            <div class="policy">
+                <a href="https://vitamini.ge/konfidencialurobis-politika">
+                    <span class="geo">კონფიდენციალურობის პოლიტიკა</span>
+                    <span class="eng">Privacy Policy</span>
+                    <span class="rus">Политика конфиденциальности</span>
+                </a>
+                <br>
+                <a href="https://vitamini.ge/dabrunebis-politika">
+                    <span class="geo">დაბრუნების პოლიტიკა</span>
+                    <span class="eng">Return Policy</span>
+                    <span class="rus">Политика возврата</span>
+                </a>
+                <br>
+                <a href="https://vitamini.ge/miwodebis-politika">
+                    <span class="geo">მიწოდების პოლიტიკა</span>
+                    <span class="eng">Delivery Policy</span>
+                    <span class="rus">Политика доставки</span>
+                </a>
+            </div>
+
+            <div class="payment">
+                <img src="main-img/unipay.png" alt="Payment">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-wrap container">
+            <div class="footer-p">
+                © 2026 <a href="main.html" class="green-font">VITAMINI</a>. All rights reserved
+            </div>
+
+            <a href="http://www.top.ge/index.php?h=110064#110064">
+                <img src="main-img/footer-img" alt="Top ge">
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
